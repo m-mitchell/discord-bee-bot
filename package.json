@@ -1,0 +1,32 @@
+{
+	"name": "discord-bee-bot",
+	"version": "1.0.0",
+	"description": "Discord Bee Bot",
+	"license": "UNLICENSED",
+	"main": "bot.js",
+	"author": "Meg Mitchell",
+	"scripts": {
+		"start": "node ./src/bot.js",
+		"test": "npx jest",
+		"lint": "./node_modules/.bin/eslint ./src/*.js",
+		"lint-fix": "./node_modules/.bin/eslint ./src/*.js --fix"
+	},
+	"dependencies": {
+		"babel-eslint": "^10.0.3",
+		"bufferutil": "^4.0.1",
+		"cowsay": "^1.4.0",
+		"discord.io": "woor/discord.io#gateway_v6",
+		"dotenv": "^8.2.0",
+		"envfile": "^3.0.0",
+		"eslint": "^6.6.0",
+		"utf-8-validate": "^5.0.2",
+		"winston": "^3.2.1",
+		"yargs": "^14.2.0"
+	},
+	"devDependencies": {
+		"eslint-config-prettier": "^6.5.0",
+		"eslint-plugin-prettier": "^3.1.1",
+		"jest": "^24.9.0",
+		"prettier": "^1.18.2"
+	}
+}

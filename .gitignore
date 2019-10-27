@@ -1,0 +1,19 @@
+# Sensitive stuff
+auth.json
+.env
+.env.test
+
+# Build files
+dist
+build
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Packages
+.npm
+node_modules
