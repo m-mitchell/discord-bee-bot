@@ -12,6 +12,7 @@
 		"lint-fix": "./node_modules/.bin/eslint ./src/*.js --fix"
 	},
 	"dependencies": {
+		"@mikemcbride/dad-jokes": "^1.0.0",
 		"babel-eslint": "^10.0.3",
 		"bufferutil": "^4.0.1",
 		"corporate-ipsum": "^1.0.1",
@@ -23,6 +24,7 @@
 		"eslint": "^6.6.0",
 		"funny-words": "^0.1.2",
 		"one-liner-joke": "^1.2.0",
+		"thesaurize": "^1.0.11",
 		"utf-8-validate": "^5.0.2",
 		"winston": "^3.2.1",
 		"yargs": "^14.2.0"

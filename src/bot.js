@@ -6,8 +6,10 @@ ping = require("./commands/ping");
 cowsay = require("./commands/cowsay");
 cambridge = require("./commands/cambridge");
 corporate = require("./commands/corporate");
-joke = require("./commands/joke");
+dadjoke = require("./commands/dadjoke");
 dilbert = require("./commands/dilbert");
+joke = require("./commands/joke");
+thesaurize = require("./commands/thesaurize");
 
 // Read env files
 dotenv.config();
@@ -72,11 +74,17 @@ bot.on("message", (user, userID, channelID, message, evt) => {
       case "cowsay":
         cowsay(bot, user, userID, channelID, cmd, args, evt);
         break;
+      case "dadjoke":
+        dadjoke(bot, user, userID, channelID, cmd, args, evt);
+        break;
       case "dilbert":
         dilbert(bot, user, userID, channelID, cmd, args, evt);
         break;
       case "joke":
         joke(bot, user, userID, channelID, cmd, args, evt);
+        break;
+      case "thesaurize":
+        thesaurize(bot, user, userID, channelID, cmd, args, evt);
         break;
     }
   }
