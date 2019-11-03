@@ -20,6 +20,7 @@
 		"dotenv": "^8.2.0",
 		"envfile": "^3.0.0",
 		"eslint": "^6.6.0",
+		"funny-words": "^0.1.2",
 		"one-liner-joke": "^1.2.0",
 		"utf-8-validate": "^5.0.2",
 		"winston": "^3.2.1",

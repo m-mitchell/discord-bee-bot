@@ -6,6 +6,7 @@ ping = require("./commands/ping");
 cowsay = require("./commands/cowsay");
 joke = require("./commands/joke");
 dilbert = require("./commands/dilbert");
+cambridge = require("./commands/cambridge");
 
 // Read env files
 dotenv.config();
@@ -60,15 +61,18 @@ bot.on("message", (user, userID, channelID, message, evt) => {
       case "help":
         help(bot, user, userID, channelID, args, evt);
         break;
+      case "cambridge":
+        cambridge(bot, user, userID, channelID, cmd, args, evt);
+        break;
       case "cowthink":
       case "cowsay":
         cowsay(bot, user, userID, channelID, cmd, args, evt);
         break;
-      case "joke":
-        joke(bot, user, userID, channelID, cmd, args, evt);
-        break;
       case "dilbert":
         dilbert(bot, user, userID, channelID, cmd, args, evt);
+        break;
+      case "joke":
+        joke(bot, user, userID, channelID, cmd, args, evt);
         break;
     }
   }

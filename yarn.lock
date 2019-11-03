@@ -1581,6 +1581,11 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
+funny-words@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/funny-words/-/funny-words-0.1.2.tgz#cbe95697f49d88ca424a75d31e468222a1ace02a"
+  integrity sha1-y+lWl/SdiMpCSnXTHkaCIqGs4Co=
+
 gauge@~2.7.3:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.4.tgz#2c03405c7538c39d7eb37b317022e325fb018bf7"
