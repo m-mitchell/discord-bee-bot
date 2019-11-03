@@ -2971,6 +2971,11 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
   dependencies:
     wrappy "1"
 
+one-liner-joke@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/one-liner-joke/-/one-liner-joke-1.2.0.tgz#755ce06f0241ee8649bc2f0c91b3f1197d49f376"
+  integrity sha512-cyqGnIRKCe25ZERjlyKtpQp4BfN+iV22nC6rLtTMkJh+w300DK+9UitFzJZfilMdFKImKQO+w/G/E1sUSYBsrw==
+
 one-time@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/one-time/-/one-time-0.0.4.tgz#f8cdf77884826fe4dff93e3a9cc37b1e4480742e"
