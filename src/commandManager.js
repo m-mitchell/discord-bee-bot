@@ -13,43 +13,70 @@ thesaurize = require("./commands/thesaurize");
 
 const commands = {
   'ping': {
-    cmd: ping
+    cmd: ping,
+    description: "Ping Bee Bot to see if he's still around.",
+    usage: "!ping"
   },
   'help': {
-    cmd: help
+    cmd: help,
+    description: "Returns a list of usable commands.",
+    usage: "!help"
   },
   'cambridge': {
-    cmd: cambridge
+    cmd: cambridge,
+    description: "Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae.",
+    usage: "!cambridge <text>"
   },
   'corporate': {
-    cmd: corporate
+    cmd: corporate,
+    description: "Synergizes innovative new ideas using patented blue-field thinking",
+    usage: "!corporate"
   },
   'cowthink': {
-    cmd: cowsay
+    cmd: cowsay,
+    description: "Makes a cow think a thing.",
+    usage: "!cowthink <text>. Try these optional parameters: `--eyes Oo`, `--tongue U`, `-r`, `--f bees`"
   },
   'cowsay': {
-    cmd: cowsay
+    cmd: cowsay,
+    description: "Makes a cow say a thing.",
+    usage: "!cowsay <text>. Try these optional parameters: `--eyes Oo`, `--tongue U`, `-r`, `--f bees`"
   },
   'crazify': {
-    cmd: crazify
+    cmd: crazify,
+    description: "MaKeS yOuR tExT a LiTtLe MoRe InTeReStInG.",
+    usage: "!crazify <text>"
   },
   'dadjoke': {
-    cmd: dadjoke
+    cmd: dadjoke,
+    description: '"I\'m tired of dad jokes." "Hi tired of dad jokes, I\'m Dad."',
+    usage: "!dadjoke"
   },
   'dilbert': {
-    cmd: dilbert
+    cmd: dilbert,
+    description: "Displays a Dilbert comic.",
+    usage: "!dilbert. Try these optional parameters: `--date 2019-01-01`"
+
   },
   'garble': {
-    cmd: garble
+    cmd: garble,
+    description: "G̵̪̋a̛͂̒r̴͇͐ḃ̛̲l̝̲͚e̵͕̕s͌̉͟ ̡͎́tͬ͒͝ȟ̤̯e͍͍͂ ͍̬ͯp̛̑͞r̰̫͋o̔̀̔v͏̀̉ȋ͖̟d̥͌͜e̶̮ͭd̒́͊ ̵̺ͅt̀ͥ̚è̸̤x͕̐͑t̲ͧͅ.̬ͧ̇.",
+    usage: "!garble <text>"
   },
   'has-the-large-hadron-collider-destroyed-the-world-yet': {
-    cmd: staticOutput
+    cmd: staticOutput,
+    description: "Returns whether the large hadron collider has destroyed the world yet.",
+    usage: "!has-the-large-hadron-collider-destroyed-the-world-yet'"
   },
   'joke': {
-    cmd: joke
+    cmd: joke,
+    description: 'Do you want to hear a joke backwards? Great, start laughing.',
+    usage: "!joke"
   },
   'thesaurize': {
-    cmd: thesaurize
+    cmd: thesaurize,
+    description: "Provides a secondary wording for the included content. ",
+    usage: "!thesaurus <text>"
   }
 };
 
