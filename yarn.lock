@@ -522,6 +522,11 @@ arrify@^1.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
+ascii-animals@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ascii-animals/-/ascii-animals-1.0.1.tgz#0d6aa9838e1da884cc88002705c983ffb21932a7"
+  integrity sha1-DWqpg44dqITMiAAnBcmD/7IZMqc=
+
 asn1@~0.2.3:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.4.tgz#8d2475dfab553bb33e77b54e59e880bb8ce23136"
@@ -944,6 +949,11 @@ cowsay@^1.4.0:
     optimist "~0.6.1"
     string-width "~2.1.1"
     strip-eof "^1.0.0"
+
+crazy-case@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/crazy-case/-/crazy-case-0.0.1.tgz#c42ca32cac97baed51a7b74cad88772cc1b08fa0"
+  integrity sha1-xCyjLKyXuu1Rp7dMrYh3LMGwj6A=
 
 cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
@@ -1653,6 +1663,11 @@ funny-words@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/funny-words/-/funny-words-0.1.2.tgz#cbe95697f49d88ca424a75d31e468222a1ace02a"
   integrity sha1-y+lWl/SdiMpCSnXTHkaCIqGs4Co=
+
+garble@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/garble/-/garble-0.1.1.tgz#acf90d782ddfacbcb1c9b193aaf8f67df408e722"
+  integrity sha1-rPkNeC3frLyxybGTqvj2ffQI5yI=
 
 gauge@~2.7.3:
   version "2.7.4"
