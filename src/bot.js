@@ -4,9 +4,10 @@ dotenv = require("dotenv");
 help = require("./commands/help");
 ping = require("./commands/ping");
 cowsay = require("./commands/cowsay");
+cambridge = require("./commands/cambridge");
+corporate = require("./commands/corporate");
 joke = require("./commands/joke");
 dilbert = require("./commands/dilbert");
-cambridge = require("./commands/cambridge");
 
 // Read env files
 dotenv.config();
@@ -63,6 +64,9 @@ bot.on("message", (user, userID, channelID, message, evt) => {
         break;
       case "cambridge":
         cambridge(bot, user, userID, channelID, cmd, args, evt);
+        break;
+      case "corporate":
+        corporate(bot, user, userID, channelID, cmd, args, evt);
         break;
       case "cowthink":
       case "cowsay":

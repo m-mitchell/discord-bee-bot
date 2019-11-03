@@ -898,6 +898,11 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
+corporate-ipsum@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/corporate-ipsum/-/corporate-ipsum-1.0.1.tgz#0216b9a8595fcfc0a3940c8c51451a165f9344fe"
+  integrity sha512-Oz9Xvi9pNvlyxdJm6aVJEHpb/8quhDWPf5O2uOsKIuyQNm9zm+j55nmBw/7SaTHGvi5goUagm2IIS3rkPr8WVw==
+
 cowsay@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/cowsay/-/cowsay-1.4.0.tgz#7c74e93d2c42542643135796577c3d7e628ba4ea"
