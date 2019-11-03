@@ -58,8 +58,9 @@ bot.on("message", (user, userID, channelID, message, evt) => {
       case "help":
         help(bot, user, userID, channelID, args, evt);
         break;
+      case "cowthink":
       case "cowsay":
-        cowsay(bot, user, userID, channelID, args, evt);
+        cowsay(bot, user, userID, channelID, cmd, args, evt);
         break;
     }
   }

@@ -1,7 +1,7 @@
 const _cowsay = require('cowsay');
 const yargs = require('yargs');
 
-const cowsay = (bot, user, userID, channelID, argsIn, evt) => {
+const cowsay = (bot, user, userID, channelID, cmd, argsIn, evt) => {
   const args = yargs.parse(argsIn);
 
   const options = {
@@ -12,7 +12,7 @@ const cowsay = (bot, user, userID, channelID, argsIn, evt) => {
     f: args.f || 'default',
   };
   try {
-    const cowsayResult = args.think ? _cowsay.think(options) : _cowsay.say(options);
+    const cowsayResult = args.think || cmd === 'cowthink' ? _cowsay.think(options) : _cowsay.say(options);
     bot.sendMessage({
       to: channelID,
       message: `\`\`\`\n${cowsayResult}\n\`\`\``
