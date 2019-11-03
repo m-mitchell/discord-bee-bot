@@ -62,10 +62,10 @@ bot.on("message", (user, userID, channelID, message, evt) => {
     args = args.splice(1);
     switch (cmd) {
       case "ping":
-        ping(bot, user, userID, channelID, args, evt);
+        ping(bot, user, userID, channelID, cmd, args, evt);
         break;
       case "help":
-        help(bot, user, userID, channelID, args, evt);
+        help(bot, user, userID, channelID, cmd, args, evt);
         break;
       case "cambridge":
         cambridge(bot, user, userID, channelID, cmd, args, evt);
