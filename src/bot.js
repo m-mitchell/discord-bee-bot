@@ -1,18 +1,7 @@
 Discord = require("discord.io");
 winston = require("winston");
 dotenv = require("dotenv");
-help = require("./commands/help");
-ping = require("./commands/ping");
-cowsay = require("./commands/cowsay");
-cambridge = require("./commands/cambridge");
-corporate = require("./commands/corporate");
-crazify = require("./commands/crazify");
-dadjoke = require("./commands/dadjoke");
-dilbert = require("./commands/dilbert");
-garble = require("./commands/garble");
-joke = require("./commands/joke");
-staticOutput = require("./commands/staticOutput");
-thesaurize = require("./commands/thesaurize");
+commands = require("./commandManager");
 
 // Read env files
 dotenv.config();
@@ -57,47 +46,12 @@ bot.on("message", (user, userID, channelID, message, evt) => {
   // It will listen for messages that will start with `!`
   if (message.substring(0, 1) === "!") {
     let args = message.substring(1).split(" ");
-    const cmd = args[0];
 
+
+    const cmd = args[0];
     args = args.splice(1);
-    switch (cmd) {
-      case "ping":
-        ping(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "help":
-        help(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "cambridge":
-        cambridge(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "corporate":
-        corporate(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "cowthink":
-      case "cowsay":
-        cowsay(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "crazify":
-        crazify(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "dadjoke":
-        dadjoke(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "dilbert":
-        dilbert(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "garble":
-        garble(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "has-the-large-hadron-collider-destroyed-the-world-yet":
-        staticOutput(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "joke":
-        joke(bot, user, userID, channelID, cmd, args, evt);
-        break;
-      case "thesaurize":
-        thesaurize(bot, user, userID, channelID, cmd, args, evt);
-        break;
+    if (Object.keys(commands).includes(cmd)) {
+      commands[cmd].cmd(bot, user, userID, channelID, cmd, args, evt);
     }
   }
 });
