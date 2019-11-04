@@ -7,6 +7,7 @@ dadjoke = require("./commands/dadjoke");
 dilbert = require("./commands/dilbert");
 garble = require("./commands/garble");
 joke = require("./commands/joke");
+lmgtfy = require("./commands/lmgtfy");
 staticOutput = require("./commands/staticOutput");
 thesaurize = require("./commands/thesaurize");
 
@@ -33,6 +34,22 @@ const help = (bot, user, userID, channelID, cmd, args, evt) => {
   });
 }
 
+/*
+Ideas:
+  - !weather victoria, bc
+  - !quiz
+  - !minesweeper
+  - !avatar
+  - !coinflip --heads option A --tails option B
+  - !dogpic !catpic !meme etc
+  - gif and image searches
+  - image warping & meme template image processors
+  - !poll option option option "last option"
+  - !roll 3d5
+  - economy -- !work !balance !leaderboard !daily
+  - !bingo -- PM PEOPLE GAME BOARDS !bingo-join !bingo-call
+
+*/
 const commands = {
   'ping': {
     cmd: ping,
@@ -94,6 +111,11 @@ const commands = {
     cmd: joke,
     description: 'Do you want to hear a joke backwards? Great, start laughing.',
     usage: "`!joke`"
+  },
+  'lmgtfy': {
+    cmd: lmgtfy,
+    description: "Search a phrase.",
+    usage: "`lmgtfy <text>`"
   },
   'thesaurize': {
     cmd: thesaurize,
